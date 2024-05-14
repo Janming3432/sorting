@@ -1,0 +1,50 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(0, 183, 255);
+  width: 30px;
+  padding: 10px;
+  margin: 3px;
+  border: none;
+  transition: all ease 500ms;
+  border-radius: 10px 10px 0 0;
+}
+
+.outer-bar {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  justify-content: center;
+
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 2s, transform 500ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform:  translateX(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 2s, transform 500ms;
+}

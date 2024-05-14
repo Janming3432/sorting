@@ -1,0 +1,31 @@
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    background-color: rgba(172, 255, 47, 0.681);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.list-item:hover {
+    background-color: rgba(172, 255, 47, 0.476);
+}
